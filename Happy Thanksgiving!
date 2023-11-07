@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title> Greeting Card </title>
+
+<style>
+
+.thanksgiving {
+position: absolute;
+top: 60%;
+width: 100%;
+text-align: center;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+width: 100%;
+font-size: 52px;
+color: #FFAB33;
+background-color: #FF7233;
+}
+
+.turkey {
+position: absolute;
+top: 20%;
+width: 100%;
+text-align: center;
+
+}
+
+body {
+background-color: #FFD533;
+}
+
+</style>
+
+<script>
+
+function dinner() {
+document.getElementById("pic1").src='Lab 12 Pics/meal.jpg';
+}
+
+function cartoon() {
+document.getElementById("pic1").src='Lab 12 Pics/turkey.jpg';
+}
+
+</script>
+
+
+</head>
+<body>
+
+<div class="thanksgiving">
+Happy Thanksgiving!
+</div>
+
+<br> <br>
+
+<div class="turkey" onmouseover="dinner()" onmouseout="cartoon()">
+<img id="pic1" src="Lab 12 Pics/turkey.jpg" alt="Thanksgiving turkey cartoon" height="300" width="400">
+</div>
+
+
+</body>
+</html>
